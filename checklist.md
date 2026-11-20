@@ -1,25 +1,31 @@
-# Checklist de Conformidade Técnica LGPD para Tags
+# Checklist de Conformidade Técnica LGPD para Tags Web
 
-**Regulatory Standard:** Lei Geral de Proteção de Dados (LGPD) e Diretrizes ANPD  
-**Maintained by:** [TAVARDT Brasil](https://ag.tavardt.com/br/)  
-
----
-
-## Technical Audit Points
-
-* **Consentimento Prévio:** Configurar todos os parâmetros de publicidade e analytics com 'denied' antes de qualquer interação do usuário.
-* **Anonimização de IP:** Forçar a remoção de identificadores pessoais antes do despacho para servidores externos.
-* **Redação de Dados de Anúncios:** Ativar ads_data_redaction para remover identificadores de cliques quando o consentimento for negado.
-* **Sequenciamento no GTM:** Garantir que tags de mídia paga disparem estritamente após o evento de atualização de consentimento.
+**Marco Regulatório:** Lei Geral de Proteção de Dados (LGPD) e Diretrizes da ANPD  
+**Mantido por:** [TAVARDT Brasil](https://ag.tavardt.com/br/)  
 
 ---
 
-## Online Verification Tools
+## Verificações Técnicas Obrigatórias
 
-Validate your tag deployment and perimeter security using TAVARDT diagnostic suites:
+* **Consentimento Prévio:** Garantir que os parâmetros ad_storage, analytics_storage e ad_user_data iniciem como 'denied'.
+* **Anonimização de Dados:** Impedir a coleta e o envio de dados pessoais (PII) por meio de variáveis da camada de dados (dataLayer).
+* **Sequenciamento no GTM:** Configurar acionadores de disparo para aguardar a confirmação de consentimento antes de emitir pixels de conversão.
+* **Revogação Simples:** Disponibilizar botão de alteração e revogação das escolhas do usuário a qualquer momento no rodapé do site.
 
-* [HTTP Security Headers Checker](https://tools.tavardt.com/br/security-headers-check/)
-* [Exposed Secret & Credential Scanner](https://tools.tavardt.com/br/exposed-files-scanner/)
-* [Full Diagnostic Suite](https://tools.tavardt.com/br/)
+---
 
-For professional privacy architecture, tag auditing, and CRO optimization, contact [TAVARDT Brasil](https://ag.tavardt.com/br/contact/).
+## Ferramentas Técnicas Online
+
+Valide a implementação das suas etiquetas utilizando a suíte de diagnósticos da TAVARDT:
+
+* [Validador de Consent Mode v2 e LGPD](https://tools.tavardt.com/br/validador-consent-mode-v2-lgpd/)
+* [Auditoria de Cabeçalhos de Segurança](https://tools.tavardt.com/br/analise-cabecalhos-seguranca/)
+* [Verificador DMARC e Segurança de E-mail](https://tools.tavardt.com/br/verificador-dmarc-email/)
+* [Varredura de Arquivos Sensíveis Expostos](https://tools.tavardt.com/br/verificador-arquivos-expostos/)
+* [Portal Completo de Ferramentas Técnicas](https://tools.tavardt.com/br/)
+
+---
+
+## Consultoria Especializada
+
+Para auditorias completas de tagueamento, adequação regulatória à LGPD e consultoria avançada em consentimento no Brasil, contate a **[TAVARDT Brasil](https://ag.tavardt.com/br/contato/)**.

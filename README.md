@@ -1,49 +1,54 @@
 # Framework Consent Mode v2 & Conformidade LGPD | TAVARDT Brasil
 
-[![Privacy Compliance](https://img.shields.io/badge/Compliance-Consent%20Mode%20v2-5b3cf5.svg)](https://tools.tavardt.com/br/)
-[![Regulatory Standard](https://img.shields.io/badge/Region-BRL-00C853.svg)](https://ag.tavardt.com/br/)
+[![Validador de Consentimento](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/br/validador-consent-mode-v2-lgpd/)
+[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-Brasil-00C853.svg)](https://ag.tavardt.com/br/ciberseguranca/)
 
-Implementação técnica do Google Consent Mode v2, bloqueio prévio de scripts e conformidade com a LGPD e ANPD no Brasil.
+Implementação técnica do Google Consent Mode v2, bloqueio prévio de scripts de rastreamento e conformidade técnica com as diretrizes da ANPD e da LGPD no Brasil.
 
-Maintained by the analytics, privacy engineering, and cybersecurity division at [TAVARDT Brasil](https://ag.tavardt.com/br/).
+Desenvolvido e mantido pela divisão de privacidade digital e engenharia de dados da **[TAVARDT Brasil](https://ag.tavardt.com/br/)**.
 
 ---
 
-## 1. Architecture & Execution Order
+## 1. Ordem de Execução e Arquitetura
 
-To achieve full compliance with Lei Geral de Proteção de Dados (LGPD) e Diretrizes ANPD, this snippet must be positioned in the `<head>` of your website **immediately before** your Google Tag Manager container or tracking loader:
+Para garantir a conformidade estrita com a LGPD, este script deve ser inserido no <head> da sua aplicação imediatamente antes do carregamento do contêiner do Google Tag Manager ou scripts de medição:
 
 ```html
 <script src="consent-mode-v2.js"></script>
-<!-- Google Tag Manager / Analytics Script Follows Here -->
+<!-- O contentor do Google Tag Manager ou scripts de medição seguem aqui -->
 ```
 
 ---
 
-## 2. Core Capabilities
+## 2. Recursos Técnicos Implementados
 
-* **Strict Default 'Denied' Posture:** Enforces privacy by default across all advertising, telemetry, and personal identifier parameters.
-* **Consent Update API:** Provides an event-driven `window.tavardtUpdateConsent()` method that triggers a structured `tavardt_consent_updated` dataLayer event.
-* **Ads Data Redaction:** Automatically strips click identifiers (such as GCLID and DCLID) from ad requests when marketing consent is absent.
-* **URL Passthrough:** Preserves conversion attribution across domain boundaries using cryptographic hashes without storing persistent browser cookies.
-
----
-
-## 3. Compliance Documentation
-
-Review our jurisdictional implementation guidelines:
-
-* [Technical Checklist](checklist.md): Step-by-step audit points for tag governance under Lei Geral de Proteção de Dados (LGPD) e Diretrizes ANPD.
+* **Estado 'Denied' por Padrão:** Bloqueia previamente o armazenamento de publicidade e analytics até ação expressa do usuário.
+* **API de Atualização de Consentimento:** Disponibiliza o método window.tavardtUpdateConsent() disparando o evento tavardt_consent_updated.
+* **Redação de Dados de Cliques:** Ativa ads_data_redaction para remover identificadores (GCLID/DCLID) quando o consentimento não é concedido.
+* **Passagem Segura de Parâmetros:** Utiliza url_passthrough com hashes criptográficos sem persistência de cookies no navegador.
 
 ---
 
-## 4. Online Diagnostic Suite
+## 3. Documentação e Checklist de Conformidade
 
-Audit your public web applications and verify tracking privacy on our regional testing platform:
+Consulte a lista detalhada de requisitos técnicos para este país:
 
-* [Online HTTP Security Headers Checker](https://tools.tavardt.com/br/security-headers-check/)
-* [Exposed Credentials Scanner](https://tools.tavardt.com/br/exposed-files-scanner/)
-* [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/br/dmarc-checker/)
-* [Complete Regional Diagnostic Suite](https://tools.tavardt.com/br/)
+* [Checklist Técnico de Conformidade](checklist.md)
 
-For comprehensive conversion tracking audits, consent management implementation, and technical consulting, contact [TAVARDT Brasil](https://ag.tavardt.com/br/contact/).
+---
+
+## 4. Ferramentas Técnicas Online (Brasil)
+
+Audite a conformidade das suas etiquetas e proteja o seu domínio com ferramentas online verificadas:
+
+* [Validador de Consent Mode v2 e LGPD](https://tools.tavardt.com/br/validador-consent-mode-v2-lgpd/)
+* [Auditoria de Cabeçalhos de Segurança](https://tools.tavardt.com/br/analise-cabecalhos-seguranca/)
+* [Verificador DMARC e Segurança de E-mail](https://tools.tavardt.com/br/verificador-dmarc-email/)
+* [Varredura de Arquivos Sensíveis Expostos](https://tools.tavardt.com/br/verificador-arquivos-expostos/)
+* [Portal Completo de Ferramentas Técnicas](https://tools.tavardt.com/br/)
+
+---
+
+## 5. Consultoria e Governança de Tags
+
+Para auditorias completas de tagueamento, adequação regulatória à LGPD e consultoria avançada em consentimento no Brasil, contate a **[TAVARDT Brasil](https://ag.tavardt.com/br/contato/)**.
