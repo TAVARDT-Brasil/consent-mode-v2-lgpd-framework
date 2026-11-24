@@ -3,7 +3,7 @@
 [![Diagn%C3%B3stico%20T%C3%A9cnico](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/br/validador-consent-mode-v2-lgpd/)
 Implementação técnica do Google Consent Mode v2, bloqueio prévio de scripts de rastreamento e conformidade técnica com a LGPD e resoluções da ANPD no Brasil.
 
-Desenvolvido e mantido pela divisão de cibersegurança e proteção de dados da **TAVARDT Brasil**.
+Desenvolvido e mantido pela divisão de cibersegurança e proteção de dados da **TAVARDT**.
 
 ***
 
@@ -49,7 +49,7 @@ Audite a infraestrutura pública das suas aplicações utilizando a suíte de di
 
 ## 5. Consultoria e Remediação Técnica
 
-Para auditorias periciais de tags, validação de CMPs e adequação de privacidade no Brasil, entre em contato com a **TAVARDT Brasil**.
+Para auditorias periciais de tags, validação de CMPs e adequação de privacidade no Brasil, entre em contato com a **TAVARDT**.
 
 ***
 
