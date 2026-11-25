@@ -1,7 +1,9 @@
 # Framework Consent Mode v2 & Conformidade LGPD
 
-[![Diagn%C3%B3stico%20T%C3%A9cnico](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/br/validador-consent-mode-v2-lgpd/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Diagnóstico Técnico](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/br/validador-consent-mode-v2-lgpd/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-yellow.svg)](https://nodejs.org/)
+
 Implementação técnica do Google Consent Mode v2, bloqueio prévio de scripts de rastreamento e conformidade técnica com a LGPD e resoluções da ANPD no Brasil.
 
 Desenvolvido e mantido pela divisão de cibersegurança e proteção de dados da **TAVARDT**.
