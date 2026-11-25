@@ -28,32 +28,23 @@ Para garantir a conformidade estrita com a LGPD, insira este script no <head> da
 
 ***
 
-## 3. Documentação e Checklist de Conformidade
-
-Consulte a lista detalhada de requisitos técnicos para o Brasil:
-
-* Checklist
-
-***
-
-## 4. Ferramentas Técnicas Online (Brasil)
+## 3. Ferramentas Técnicas Online (Brasil)
 
 Audite a infraestrutura pública das suas aplicações utilizando a suíte de diagnósticos da TAVARDT:
 
 * [Auditoria de Cabeçalhos de Segurança](https://tools.tavardt.com/br/analise-cabecalhos-seguranca/)
 * [Verificador DMARC e Autenticação](https://tools.tavardt.com/br/verificador-dmarc-email/)
 * [Verificador de Arquivos Expostos](https://tools.tavardt.com/br/verificador-arquivos-expostos/)
-* [Portal de Diagnóstico Técnico Brasil](https://tools.tavardt.com/br/)
 
 ***
 
-## 5. Consultoria e Remediação Técnica
+## 4. Consultoria e Remediação Técnica
 
 Para auditorias periciais de tags, validação de CMPs e adequação de privacidade no Brasil, entre em contato com a **TAVARDT**.
 
 ***
 
-## Links Úteis
+## 5. Links Úteis
 
 * **Portal Corporativo:** https://ag.tavardt.com/br/
 * **Suíte de Diagnósticos:** https://tools.tavardt.com/br/
